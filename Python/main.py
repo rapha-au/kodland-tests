@@ -18,6 +18,9 @@ muted=False
 changed = False
 prev_mouse = False
 
+my_sounds = {
+    "song": sounds.song
+}
 
 
 class Enemy:
@@ -298,7 +301,7 @@ def set_all_volume(vol):
     music.set_volume(vol)
 
     for snd in my_sounds.values():
-        snd.set_volume(vol)
+       snd.set_volume(vol)
 
 def toggle_mute_unmute():
     global muted, changed
